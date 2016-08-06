@@ -1,7 +1,7 @@
 require 'page-object'
 
-class LoginPage 
-  
+class LoginPage
+
   include PageObject
 
   text_field(:username, :id => 'user_name')
