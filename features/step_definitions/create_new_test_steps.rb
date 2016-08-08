@@ -1,6 +1,5 @@
-And(/^I input the test name and save$/) do
-  #input test name and save
+And(/^I input the test name "([^"]*)" and save$/) do |arg|
   createNewTestPage = CreateNewTestPage.new($browser)
-  createNewTestPage.test_name = 'test123'
+  createNewTestPage.test_name = arg
   createNewTestPage.save
 end

@@ -4,5 +4,9 @@ end
 
 And(/^I click the new button on atf tests list to create a new test$/) do
   testListPage = TestListPage.new($browser)
-  testListPage.new_button
+  testListPage.click_new_button
+end
+
+And(/^I open the test "([^"]*)" from the test list$/) do |arg|
+  $browser.find_element(:link_text=> arg).click()
 end
