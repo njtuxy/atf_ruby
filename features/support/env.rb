@@ -1,5 +1,5 @@
 require 'selenium-webdriver'
-require 'page-object'
+require 'page-object' #http://www.rubydoc.info/github/cheezy/page-object/PageObject/Accessors
 
 Dir["./pages/*.rb"].each { |file| require file } #load all files in pages folder.
 
