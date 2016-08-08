@@ -1,7 +1,8 @@
-Before do puts "Go!"
+Before do
+  puts "Go!"
 end
 
 
 After do
-  @@browser.quit
+  $browser.quit
 end
