@@ -7,7 +7,10 @@ Feature: Adding new test
 #    And I input the test name "TEST 123" and save
     And I open the test "TEST 123" from the test list
     And I click add test step button
-    And I choose Impersonate step
+    And I choose open a new form step
+#    And I choose Impersonate step
+    And I choose "[alm_hardware]" to open
+
 
 
 

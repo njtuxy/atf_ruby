@@ -6,3 +6,8 @@ end
 After do
   $browser.quit
 end
+
+
+AfterStep do |scenario|
+  sleep 1
+end

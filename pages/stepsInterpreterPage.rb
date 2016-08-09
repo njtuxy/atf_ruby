@@ -11,7 +11,7 @@ class StepsInterpreterPage
   list_item(:record_insert, :xpath => self.stepXpath(4))
 
   def open_a_new_form
-    step_open_a_new_form_element.double_click
+    open_a_new_form_element.double_click
   end
 
   def impersonate

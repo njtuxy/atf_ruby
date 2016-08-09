@@ -1,5 +1,12 @@
 And(/^I choose Impersonate step$/) do
-  #$browser.find_element( :xpath => '/html/body/div[7]/div/div/div/rendered_body/div[1]/div[2]/ul/li[2]').click()
   stepsInterpreterPage = StepsInterpreterPage.new($browser)
   stepsInterpreterPage.impersonate
+  $browser.switch_to.frame('dialog_frame')
 end
+
+And(/^I choose open a new form step$/) do
+  stepsInterpreterPage = StepsInterpreterPage.new($browser)
+  stepsInterpreterPage.open_a_new_form
+  $browser.switch_to.frame('dialog_frame')
+end
+
